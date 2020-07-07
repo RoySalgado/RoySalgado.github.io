@@ -6,18 +6,19 @@ $base: #060a0f
 $sec: #494949
 $outline: #ff6600
 $text: transparentize($sec,.5)
+$change: white
 //Estilos Generales
 a  
-    margin:0px
-    padding:0px
+    margin: 0px
+    padding: 0px
     @extend .tSlow
     &:hover
-        color:$outline
+        color: $outline
 
 h1,h2,h3,h4,h5,h6
-    color:$base
+    color: $base
 p
-    color:$sec
+    color: $sec
 
 .tSlow
     -webkit-transition: all 0.5s ease-in-out
@@ -62,8 +63,8 @@ button
     @extend .tSlow
     &:hover
         opacity: 1
-        background-color: white
-        color: white
+        background-color: transparentize(white, .1)
+        color: black !important
 .black
     background-color: $base
     opacity: 1
@@ -75,12 +76,32 @@ button
 //Barrra de Navegacion
  
 nav
-    width:100% 
+    width: 100% 
     padding: 10px 0px
     position: fixed
     border-bottom: 1px solid transparent
     z-index: 100
     @extend .tSlow
+    ////Animacion barras
+    &:hover
+        background-color: transparentize(white, .1)
+        padding: 25px 0px
+        border: 1px solid transparentize($base, .3)
+        $change: black
+        .logo
+            img
+                width: 80%
+        ul
+            margin-top: 8px
+            li
+                a
+                    color: transparentize(black, .4)
+        ul
+            .link-active
+                a
+                    color: $change !important
+
+    ///////////Termina animacion barras
     .logo
         img
             width: 100%
@@ -93,7 +114,8 @@ nav
         @extend .tSlow
         .link-active
             a
-                color: white !important
+                color: $change !important
+                
                 &:after
                     width: 100%
                     background-color: red
@@ -128,7 +150,7 @@ nav
             &:hover
                 
                 text-decoration: none
-                color: white
+                color: black !important
                 &:before
                     width: 0%
                     background-color: red
@@ -177,3 +199,4 @@ nav
         color: $base
     .alineacionright
         text-align: right
+
