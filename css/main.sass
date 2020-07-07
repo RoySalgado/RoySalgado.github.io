@@ -46,12 +46,13 @@ nav
             @extend .tSlow
     ul
         margin: 0px
+        margin-top: 12px
         padding: 0px
         text-align: right
         @extend .tSlow
         .link-active
             a
-                color: $base !important
+                color: white !important
                 &:after
                     width: 100%
                     background-color: red
@@ -63,7 +64,7 @@ nav
             position: relative
             text-decoration: none
             font-size: 16px
-            color: black
+            color: white
             @extend .tSlow
             &:before 
                 content: ""
@@ -85,7 +86,7 @@ nav
             &:hover
                 
                 text-decoration: none
-                color: $base
+                color: white
                 &:before
                     width: 0%
                     background-color: red
@@ -93,3 +94,12 @@ nav
                     width: 100%
                     background-color: red
                     
+///////////////////////////////////
+//Estilos Slider
+///////////////////////////////////
+
+#slider
+    backface-visibility: hidden
+    -webkit-clip-path: polygon(100% 0% , 100% 100% , 50% 85% , 0% 100% , 0% 0%)
+    -o-clip-path: polygon(100% 0% , 100% 100% , 50% 85% , 0% 100% , 0% 0%)
+    clip-path: polygon(100% 0% , 100% 100% , 50% 85% , 0% 100% , 0% 0%)

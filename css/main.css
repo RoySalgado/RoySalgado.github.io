@@ -39,11 +39,12 @@ nav .logo img {
 }
 nav ul {
   margin: 0px;
+  margin-top: 12px;
   padding: 0px;
   text-align: right;
 }
 nav ul .link-active a {
-  color: #060a0f !important;
+  color: white !important;
 }
 nav ul .link-active a:after {
   width: 100%;
@@ -57,7 +58,7 @@ nav ul a {
   position: relative;
   text-decoration: none;
   font-size: 16px;
-  color: black;
+  color: white;
 }
 nav ul a:before {
   content: "";
@@ -78,7 +79,7 @@ nav ul a:after {
 }
 nav ul a:hover {
   text-decoration: none;
-  color: #060a0f;
+  color: white;
 }
 nav ul a:hover:before {
   width: 0%;
@@ -87,4 +88,12 @@ nav ul a:hover:before {
 nav ul a:hover:after {
   width: 100%;
   background-color: red;
+}
+
+#slider {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
 }
