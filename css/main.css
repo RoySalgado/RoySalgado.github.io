@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, button, input,
+.tSlow, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rounded-circle, button, input,
 select,
 option,
 textarea, a {
@@ -28,6 +28,12 @@ textarea, a {
 .center {
   text-align: center;
   margin: 0px auto;
+}
+
+.main-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #060a0f;
 }
 
 input,
@@ -84,6 +90,18 @@ button:hover {
 .black:hover {
   background-color: #ff6600;
   border: 1px solid #ff6600;
+}
+
+.rounded-circle {
+  width: 250px;
+  height: 250px;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.rounded-circle:hover {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
 }
 
 nav {
@@ -219,4 +237,12 @@ nav ul a:hover:after {
 }
 #slippry .alineacionright {
   text-align: right;
+}
+
+.blackButton {
+  color: black;
+}
+
+.centrarEl {
+  margin: 0 auto;
 }

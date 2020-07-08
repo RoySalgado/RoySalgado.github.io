@@ -29,6 +29,11 @@ p
 .center
     text-align: center
     margin: 0px auto
+.main-title
+    font-size: 60px
+    font-weight: bold
+    color: $base
+
 //Estilo de los inputs, textarea, button
 input,
 select,
@@ -72,6 +77,20 @@ button
     &:hover
         background-color: $outline
         border: 1px solid $outline
+
+
+///////////////////////
+///Imagenes
+//////////////////////
+.rounded-circle
+    width: 250px
+    height: 250px
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    @extend .tSlow
+    &:hover
+        clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%)
 
 //Barrra de Navegacion
  
@@ -200,3 +219,10 @@ nav
     .alineacionright
         text-align: right
 
+.blackButton
+    color: black
+
+.centrarEl
+     margin: 0 auto
+
+    
