@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rounded-circle, button, input,
+.tSlow, .specialBox, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rombo, .rounded-circle, button, input,
 select,
 option,
 textarea, a {
@@ -95,13 +95,31 @@ button:hover {
 .rounded-circle {
   width: 250px;
   height: 250px;
+}
+
+.rombo, .rounded-circle {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-.rounded-circle:hover {
+.rombo:hover, .rounded-circle:hover {
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
           clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.diamante {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0px auto;
+  background: url("../images/MiFoto.png");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 200;
+  border: 4px solid #c50000;
 }
 
 nav {
@@ -245,4 +263,14 @@ nav ul a:hover:after {
 
 .centrarEl {
   margin: 0 auto;
+}
+
+.specialBox:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.specialBox:hover img {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
+  transform: translateY(-15px);
 }
