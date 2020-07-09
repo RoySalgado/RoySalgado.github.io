@@ -45,6 +45,10 @@ textarea, a {
   text-align: justify;
 }
 
+.specColor {
+  color: #a3dddb;
+}
+
 input,
 select,
 option,
@@ -128,7 +132,7 @@ button:hover {
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 200;
-  border: 4px solid #c50000;
+  background-color: #86dbd4;
 }
 
 nav {
