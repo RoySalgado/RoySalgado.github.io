@@ -86,7 +86,7 @@ button
 ///////////////////////
 ///Imagenes
 //////////////////////
-.rounded-circle
+.servicio-img
     width: 250px
     height: 250px
     @extend .rombo
@@ -257,7 +257,53 @@ nav
 
 .marginTop50
     margin-top: 0px
+/////////////
+///////Footer
+/////////////
+footer
+    margin-top: -60px
+    width: 100%
+    background-color: $base
+    padding: 70px 0px
+    -webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+    -o-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+    clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%)
+    p
+        margin: 0px
+        padding: 0px
+    .white
+        color: transparentize(white, .6)
+    ul
+        padding: 0px
+        margin: 0px
+        list-style: none
+        li
+            padding: 0px
+            margin: 0px  
+            color: transparentize(white, .8)
+    a
+        opacity: 0.5
+        color: $outline
+    hr
+        border-radius: 10px
+        background-color: transparentize(white, .92)
+
+.tumblr
+    position: relative
+    float: left
+    margin: 0px
+    padding: 0px
+    width: 20%
+    cursor: pointer
+    opacity: .7
+    @extend .tSlow
+    &:hover
+        opacity: 1
 
 @media screen and (max-width: 1199px)
     .marginTop50
         margin-top: 50px
+    #slippry
+        
+    .imgBig
+        height: 450px

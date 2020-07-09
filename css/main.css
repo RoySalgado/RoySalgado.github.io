@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .specialBox, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rombo, .rounded-circle, button, input,
+.tSlow, .tumblr, .specialBox, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rombo, .servicio-img, button, input,
 select,
 option,
 textarea, a {
@@ -101,17 +101,17 @@ button:hover {
   border: 1px solid #ff6600;
 }
 
-.rounded-circle {
+.servicio-img {
   width: 250px;
   height: 250px;
 }
 
-.rombo, .rounded-circle {
+.rombo, .servicio-img {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -o-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-.rombo:hover, .rounded-circle:hover {
+.rombo:hover, .servicio-img:hover {
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
           clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
 }
@@ -288,8 +288,60 @@ nav ul a:hover:after {
   margin-top: 0px;
 }
 
+footer {
+  margin-top: -60px;
+  width: 100%;
+  background-color: #060a0f;
+  padding: 70px 0px;
+  -webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+  -o-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+}
+footer p {
+  margin: 0px;
+  padding: 0px;
+}
+footer .white {
+  color: rgba(255, 255, 255, 0.4);
+}
+footer ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+footer ul li {
+  padding: 0px;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.2);
+}
+footer a {
+  opacity: 0.5;
+  color: #ff6600;
+}
+footer hr {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.tumblr {
+  position: relative;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  width: 20%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.tumblr:hover {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1199px) {
   .marginTop50 {
     margin-top: 50px;
+  }
+
+  .imgBig {
+    height: 450px;
   }
 }
