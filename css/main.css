@@ -263,6 +263,9 @@ nav ul a:hover:after {
 #slippry .right_150 {
   right: 150px;
 }
+#slippry .top_100 {
+  top: 100px;
+}
 #slippry .top_250 {
   top: 250px;
 }
@@ -370,15 +373,6 @@ footer hr {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1199px) {
-  .marginTop50 {
-    margin-top: 50px;
-  }
-
-  .imgBig {
-    height: 450px;
-  }
-}
 .social-networks {
   margin-top: 5px;
 }
@@ -410,4 +404,37 @@ footer hr {
 .social-networks li:hover i {
   color: #060a0f;
   transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+#noop {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .marginTop50 {
+    margin-top: 50px;
+  }
+
+  .imgBig {
+    height: 450px;
+  }
+
+  #slippry {
+    text-align: center;
+    margin: 0px auto;
+  }
+  #slippry li h3 {
+    text-align: center;
+    margin: 100px 10px;
+  }
+  #slippry li p {
+    margin: 140px 10px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 430px) {
+  .diamante {
+    width: 200px;
+    height: 200px;
+  }
 }
