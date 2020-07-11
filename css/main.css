@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .tumblr, .specialBox, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rombo, .servicio-img, button, input,
+.tSlow, .social-networks li i, .social-networks li, .copy a, .tumblr, .specialBox, nav ul a:after, nav ul a:before, nav ul a, nav ul .link-active a:after, nav ul, nav .logo img, nav, .rombo, .servicio-img, button, input,
 select,
 option,
 textarea, a {
@@ -318,10 +318,6 @@ footer ul li {
   margin: 0px;
   color: rgba(255, 255, 255, 0.2);
 }
-footer a {
-  opacity: 0.5;
-  color: #ff6600;
-}
 footer hr {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.08);
@@ -340,6 +336,25 @@ footer hr {
   opacity: 1;
 }
 
+.copy {
+  padding: 10px 0px;
+  background-color: #070c13;
+  text-align: left;
+}
+.copy p, .copy a {
+  margin: 0px;
+  padding: 0px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.copy a {
+  opacity: 0.5;
+  color: #ff6600;
+}
+.copy a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1199px) {
   .marginTop50 {
     margin-top: 50px;
@@ -348,4 +363,36 @@ footer hr {
   .imgBig {
     height: 450px;
   }
+}
+.social-networks {
+  margin-top: 5px;
+}
+.social-networks li {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transform: rotate(0deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  cursor: pointer;
+}
+.social-networks li i {
+  font-size: rgba(255, 255, 255, 0.2);
+  transform: rotate(0deg) translate(-3px, 3px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.social-networks li:hover {
+  transform: rotate(45deg);
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.social-networks li:hover i {
+  color: #060a0f;
+  transform: rotate(-45deg) translate(-3px, 3px);
 }

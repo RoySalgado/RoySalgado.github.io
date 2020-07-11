@@ -285,9 +285,6 @@ footer
             padding: 0px
             margin: 0px  
             color: transparentize(white, .8)
-    a
-        opacity: 0.5
-        color: $outline
     hr
         border-radius: 10px
         background-color: transparentize(white, .92)
@@ -304,6 +301,23 @@ footer
     &:hover
         opacity: 1
 
+.copy
+    padding: 10px 0px
+    background-color: lighten($base, 1)
+    text-align: left
+    p, a
+        margin: 0px
+        padding: 0px
+        color: transparentize(white, .7)
+    a
+        opacity: .5
+        color: $outline
+        @extend .tSlow
+        &:hover
+            opacity: 1
+            text-decoration: none
+
+
 @media screen and (max-width: 1199px)
     .marginTop50
         margin-top: 50px
@@ -311,3 +325,43 @@ footer
         
     .imgBig
         height: 450px
+
+.social-networks
+    margin-top: 5px
+    li
+        display: inline-block
+        position: relative
+        margin: 0 10px
+        float: left
+        width: 30px
+        height: 30px
+        text-align: center
+        -webkit-transform: rotate(0deg)
+        -ms-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+        backface-visibility: hidden
+        cursor: pointer
+        @extend .tSlow
+        i
+            font-size: transparentize(white, .8)
+            -webkit-transform: rotate(0deg) translate(-3px,3px)
+            -ms-transform: rotate(0deg) translate(-3px,3px)
+            -o-transform: rotate(0deg) translate(-3px,3px)
+            transform: rotate(0deg) translate(-3px,3px)
+           
+            backface-visibility: hidden
+            @extend .tSlow
+        &:hover
+            -webkit-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg)
+            background-color: white
+            backface-visibility: hidden
+            i
+                color: $base
+                -webkit-transform: rotate(-45deg) translate(-3px , 3px)
+                -ms-transform: rotate(-45deg) translate(-3px , 3px)
+                -o-transform: rotate(-45deg) translate(-3px , 3px)
+                transform: rotate(-45deg) translate(-3px , 3px)
