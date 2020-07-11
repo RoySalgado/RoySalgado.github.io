@@ -131,7 +131,7 @@ button:hover {
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  z-index: 200;
+  z-index: 50;
   background-color: #86dbd4;
 }
 
@@ -214,6 +214,21 @@ nav ul a:hover:before {
 nav ul a:hover:after {
   width: 100%;
   background-color: red;
+}
+
+.nav-overlay {
+  background-color: white;
+  border-bottom: 1px solid rgba(6, 10, 15, 0.1);
+  padding: 25px 0px;
+}
+.nav-overlay .logo img {
+  width: 80%;
+}
+.nav-overlay ul {
+  margin-top: 8px;
+}
+.nav-overlay ul li a {
+  color: black !important;
 }
 
 #slider {
