@@ -15,5 +15,5 @@ $(document).ready(function(){
             $("#nav").removeClass("nav-overlay");
         }
     });
-    $(window).scroll();
+    
 });
