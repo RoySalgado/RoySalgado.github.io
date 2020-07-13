@@ -218,11 +218,7 @@ nav
 //Estilos Slider
 ///////////////////////////////////
 
-#slider
-    backface-visibility: hidden
-    -webkit-clip-path: polygon(100% 0% , 100% 100% , 50% 85% , 0% 100% , 0% 0%)
-    -o-clip-path: polygon(100% 0% , 100% 100% , 50% 85% , 0% 100% , 0% 0%)
-    clip-path: polygon(100% 0% , 100% 100% , 50% 85% , 0% 100% , 0% 0%)
+
 
 #slippry
     position: relative
@@ -257,6 +253,8 @@ nav
         color: $base
     .alineacionright
         text-align: right
+    .omg
+        margin: auto
 
 .blackButton
     color: black
@@ -377,6 +375,51 @@ footer
 #noop
     display: none
 
+.rText
+    text-align: center
+    padding: center
+    position: center
+
+///////Nuevo superior
+header
+    margin: 0
+    padding: 0
+    perspective: 1px
+    width: 100%
+    text-align: center
+    background: url("../images/sunset-5120x2880-clouds-5k-19547.jpg")
+    background-size: cover
+    height: 100vh
+    display: table
+.wrapper
+    position: absolute
+    top: 45%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 30%
+.actionStart
+    stroke: #fff
+    fill: #fff
+    stroke-dasharray: 1800
+    opacity: 10
+    animation: animate 4s cubic-bezier(0,0.23,1,.1)
+
+@keyframes animate
+    0%
+        opacity: 0
+        fill: none
+        stroke-dashoffset: 1800
+    30%
+        opacity: 10
+        fill: none
+        stroke-dashoffset: 1800
+    90%
+        fill: rgba(255, 255, 255, 0)
+    100%
+        opacity: 10
+        fill: rgba(255, 255, 255, 1)
+        stroke-dashoffset: 0
+        
 
 @media screen and (max-width: 1199px)
     .marginTop50
@@ -392,11 +435,14 @@ footer
         li
             h3 
                 text-align: center
-                margin: 100px 10px
+                margin: 0px auto
             p
                margin: 140px 10px
                text-align: left
 
+@media screen and (max-width: 700px)
+    .wrapper
+        width: 50%
 @media screen and (max-width: 430px)
     .diamante
         width: 200px
