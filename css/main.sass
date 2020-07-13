@@ -217,7 +217,12 @@ nav
 ///////////////////////////////////
 //Estilos Slider
 ///////////////////////////////////
-
+    
+#slider
+    backface-visibility: hidden
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
+    -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
+    clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
 
 
 #slippry
@@ -260,7 +265,7 @@ nav
     color: black
 
 .centrarEl
-     margin: 0 auto
+    margin: 0 auto
 
 //Hecho para un hover especial dando unas propiedades las cuales se aplican en cajas div, anadiendo el efecto en la imagen la cual de ser un triangulo pasa a ser un circulo
 .specialBox
@@ -389,8 +394,11 @@ header
     text-align: center
     background: url("../images/sunset-5120x2880-clouds-5k-19547.jpg")
     background-size: cover
-    height: 100vh
+    height: 70vh
     display: table
+    
+
+
 .wrapper
     position: absolute
     top: 45%
@@ -403,6 +411,13 @@ header
     stroke-dasharray: 1800
     opacity: 10
     animation: animate 4s cubic-bezier(0,0.23,1,.1)
+
+.st0
+    fill: #fff
+    stroke: #ffffff
+    stroke-width: 3
+    stroke-miterlimit: 10
+
 
 @keyframes animate
     0%
@@ -437,13 +452,27 @@ header
                 text-align: center
                 margin: 0px auto
             p
-               margin: 140px 10px
-               text-align: left
+                margin: 140px 10px
+                text-align: left
+    header
+        height: 70vh
+    nav
+        padding: 0px 0px
+    .wrapper
+        width: 40%
 
 @media screen and (max-width: 700px)
     .wrapper
         width: 50%
+    header
+        height: 70vh
+    nav
+        padding: 0px 0px
+        &:hover
+            padding: 15px 0px
 @media screen and (max-width: 430px)
     .diamante
         width: 200px
         height: 200px
+    nav
+        padding: 0px 0px

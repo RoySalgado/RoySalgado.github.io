@@ -231,6 +231,14 @@ nav ul a:hover:after {
   color: black !important;
 }
 
+#slider {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+}
+
 #slippry {
   position: relative;
 }
@@ -419,7 +427,7 @@ header {
   text-align: center;
   background: url("../images/sunset-5120x2880-clouds-5k-19547.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   display: table;
 }
 
@@ -437,6 +445,13 @@ header {
   stroke-dasharray: 1800;
   opacity: 10;
   animation: animate 4s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.st0 {
+  fill: #fff;
+  stroke: #ffffff;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
 }
 
 @keyframes animate {
@@ -480,15 +495,42 @@ header {
     margin: 140px 10px;
     text-align: left;
   }
+
+  header {
+    height: 70vh;
+  }
+
+  nav {
+    padding: 0px 0px;
+  }
+
+  .wrapper {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 700px) {
   .wrapper {
     width: 50%;
+  }
+
+  header {
+    height: 70vh;
+  }
+
+  nav {
+    padding: 0px 0px;
+  }
+  nav:hover {
+    padding: 15px 0px;
   }
 }
 @media screen and (max-width: 430px) {
   .diamante {
     width: 200px;
     height: 200px;
+  }
+
+  nav {
+    padding: 0px 0px;
   }
 }

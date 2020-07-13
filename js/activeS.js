@@ -17,4 +17,6 @@ $(document).ready(function(){
     });
     $(window).scroll();
     $("path").addClass("actionStart");
+
+
 });
